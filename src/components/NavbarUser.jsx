@@ -105,7 +105,7 @@ const NavbarUser = () => {
   const logout = async () => {
     try {
 
-      const response = await fetch(`${import.meta.env.VITE_BASE_URL || import.meta.env.VITE_LOCAL_URL}/user/logout`, {
+      const response = await fetch(`${import.meta.env.VITE_LOCAL_URL}/user/logout`, {
         method: 'GET',
         credentials: 'include',
         mode: 'cors' 
