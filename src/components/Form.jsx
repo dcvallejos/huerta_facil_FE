@@ -116,7 +116,7 @@ const Form = () => {
 
   const loginRequest = async (credentials) => {
     try {
-      const results = await fetch(`${import.meta.env.VITE_BASE_URL || import.meta.env.VITE_LOCAL_URL}/user/login`, {
+      const results = await fetch(`${import.meta.env.VITE_LOCAL_URL}/user/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(credentials),
